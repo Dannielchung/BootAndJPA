@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,16 +6,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Created by tianxianglan on 2017/5/30.
+ * Created by cvter on 2017/6/1.
  */
 @Entity
-@Table(name = "user")
-public class User {
+@Table(name = "team")
+public class Group {
     private int id;
     private String name;
 
     @Id
-    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -24,7 +23,7 @@ public class User {
         this.id = id;
     }
 
-    @Column(name = "name")
+    @Column(name = "g_name")
     public String getName() {
         return name;
     }

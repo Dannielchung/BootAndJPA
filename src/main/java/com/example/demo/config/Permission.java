@@ -1,8 +1,11 @@
+/*
 package com.example.demo.config;
 
+*/
 /**
  * Created by cvter on 2017/6/2.
- */
+ *//*
+
 public enum Permission {
     SYSTEM("SYSTEM"),                       //系统
     SYSTEM_VIEW("SYSTEM:VIEW"),             //系统查看
@@ -32,3 +35,4 @@ public enum Permission {
         System.out.println(DATA);
     }
 }
+*/

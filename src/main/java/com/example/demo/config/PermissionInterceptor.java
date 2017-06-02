@@ -1,3 +1,4 @@
+/*
 package com.example.demo.config;
 
 import org.slf4j.Logger;
@@ -7,9 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+*/
 /**
  * Created by cvter on 2017/6/2.
- */
+ *//*
+
 public class PermissionInterceptor {
     @Autowired
     private PermissionManagerService permissionManagerService;
@@ -57,3 +60,4 @@ public class PermissionInterceptor {
 
 }
 }
+*/

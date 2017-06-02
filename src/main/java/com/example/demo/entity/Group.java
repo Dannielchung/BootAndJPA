@@ -23,7 +23,7 @@ public class Group {
         this.id = id;
     }
 
-    @Column(name = "g_name")
+    @Column(name = "name")
     public String getName() {
         return name;
     }

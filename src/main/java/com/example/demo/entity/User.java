@@ -21,7 +21,7 @@ public class User {
         this.id = id;
     }
 
-    @Column(name = "u_name")
+    @Column(name = "name")
     public String getName() {
         return name;
     }

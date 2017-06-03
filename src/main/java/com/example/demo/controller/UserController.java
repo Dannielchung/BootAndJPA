@@ -16,11 +16,6 @@ public class UserController {
 
     @PostMapping(value = "/test")
     public void test(){
-        /*User user = new User();
-        user.setId(2);
-        user.setName("tianxiang");
-        userService.save(user);*/
-
         User findUser = userService.search("leo");
         String groupName = findUser.getGroup().getName();
         System.out.println(groupName);

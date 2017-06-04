@@ -1,19 +1,34 @@
 /*
-package com.example.demo.config;
+package com.example.demo.config.;
 
+import com.seewo.core.util.json.JsonUtils;
+import com.seewo.school.util.CommonResult;
+import com.seewo.school.util.Constants;
+import com.seewo.school.util.StatusCode;
+import com.seewo.school.service.PermissionManagerService;
+import com.seewo.school.web.annotation.Permission;
+import com.seewo.school.web.annotation.RequiredPermission;
+import com.seewo.uc.api.dto.user.UserResultDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.method.HandlerMethod;
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 */
 /**
- * Created by cvter on 2017/6/2.
+ * @version v0.1
+ * @description 权限拦截器
+ * @editor
+ * @creater YaoLang
+ * @date 2017/2/8
  *//*
 
-public class PermissionInterceptor {
+public class PermissionInterceptor extends HandlerInterceptorAdapter {
+
     @Autowired
     private PermissionManagerService permissionManagerService;
 
@@ -58,6 +73,4 @@ public class PermissionInterceptor {
     }
 
 
-}
-}
-*/
+}*/

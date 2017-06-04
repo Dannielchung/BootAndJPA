@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.annotation.PermissionEnum;
+import com.example.demo.annotation.SelfPermitition;
 import com.example.demo.service.UserService;
 import com.example.demo.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ public class UserController {
     UserService userService;
 
     @PostMapping(value = "/test")
+    @SelfPermitition(value = PermissionEnum.ADMIN)
     public void test(){
         User findUser = userService.search("leo");
         String groupName = findUser.getGroup().getName();

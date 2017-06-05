@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Documented
 public @interface SelfPermitition {
 
-    PermissionEnum value() default PermissionEnum.COMMON_USER;
+    PermissionEnum[] value();
 
 
 }

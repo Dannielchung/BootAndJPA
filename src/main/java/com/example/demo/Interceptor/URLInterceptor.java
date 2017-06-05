@@ -2,6 +2,7 @@ package com.example.demo.Interceptor;
 
 import com.example.demo.annotation.PermissionEnum;
 import com.example.demo.annotation.SelfPermitition;
+import org.springframework.core.MethodParameter;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,7 +21,21 @@ public class URLInterceptor implements HandlerInterceptor {
         System.out.println("preHandle");
         HandlerMethod handlerMethod = (HandlerMethod)o;
         SelfPermitition selfPermitition = handlerMethod.getMethodAnnotation(SelfPermitition.class);
-        System.out.println(selfPermitition.value().name());
+
+        if (selfPermitition != null) {
+            MethodParameter[] parameters = handlerMethod.getMethodParameters();
+            for (MethodParameter para : parameters){
+                System.out.println(para.getMember());
+            }
+            String str = httpServletRequest.getParameter("token");
+            System.out.println("str  "+ str);
+            PermissionEnum[] permissionEnums = selfPermitition.value();
+            for (PermissionEnum oo : permissionEnums){
+                System.out.println(oo.name());
+            }
+        }
+        else
+            System.out.println("selePermission is null");
         return true;
     }
 

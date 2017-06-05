@@ -17,10 +17,16 @@ public class UserController {
     UserService userService;
 
     @PostMapping(value = "/test")
-    @SelfPermitition(value = PermissionEnum.ADMIN)
-    public void test(){
+    @SelfPermitition(value = {PermissionEnum.ADMIN, PermissionEnum.COMMON_USER})
+    public void test(String token){
         User findUser = userService.search("leo");
         String groupName = findUser.getGroup().getName();
         System.out.println(groupName);
+    }
+
+    @PostMapping(value = "/testNULL")
+
+    public void yy(){
+        System.out.println("test annotation is null");
     }
 }

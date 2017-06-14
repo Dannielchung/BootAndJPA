@@ -18,7 +18,7 @@ public class URLInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-        System.out.println("preHandle");
+        /*System.out.println("preHandle");
         HandlerMethod handlerMethod = (HandlerMethod)o;
         SelfPermitition selfPermitition = handlerMethod.getMethodAnnotation(SelfPermitition.class);
 
@@ -35,17 +35,15 @@ public class URLInterceptor implements HandlerInterceptor {
             }
         }
         else
-            System.out.println("selePermission is null");
+            System.out.println("selePermission is null");*/
         return true;
     }
 
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
-        System.out.println("postHandle");
     }
 
     @Override
     public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
-        System.out.println("afterCompletion");
     }
 }

@@ -1,0 +1,70 @@
+2017-06-15 01:59:06,955  INFO TestForApplication:14 - test log4j is working or not
+2017-06-15 01:59:08,519  INFO TestForApplication:48 - Starting TestForApplication on tianxianglan-PC with PID 6524 (D:\destiny\Boot\target\classes started by tianxianglan in D:\destiny\Boot)
+2017-06-15 01:59:08,521  INFO TestForApplication:637 - No active profile set, falling back to default profiles: default
+2017-06-15 01:59:08,923  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42607a4f: startup date [Thu Jun 15 01:59:08 CST 2017]; root of context hierarchy
+2017-06-15 01:59:09,255  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-06-15 01:59:12,865  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8081 (http)
+2017-06-15 01:59:13,216  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 4483 ms
+2017-06-15 01:59:13,546  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-15 01:59:13,555  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-15 01:59:13,556  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-15 01:59:13,557  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-15 01:59:13,557  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-15 01:59:13,830  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-06-15 01:59:13,881  INFO LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-06-15 01:59:14,047  INFO Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2017-06-15 01:59:14,054  INFO Environment:239 - HHH000206: hibernate.properties not found
+2017-06-15 01:59:14,059  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-06-15 01:59:16,848  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-06-15 01:59:17,455  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-06-15 01:59:17,630  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-06-15 01:59:17,635  WARN SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-06-15 01:59:18,361  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-06-15 01:59:19,474  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42607a4f: startup date [Thu Jun 15 01:59:08 CST 2017]; root of context hierarchy
+2017-06-15 01:59:19,660  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test],methods=[POST]}" onto public void com.example.demo.controller.UserController.test(java.lang.String)
+2017-06-15 01:59:19,663  INFO RequestMappingHandlerMapping:543 - Mapped "{[/testNULL],methods=[POST]}" onto public void com.example.demo.controller.UserController.yy()
+2017-06-15 01:59:19,678  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-15 01:59:19,682  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-15 01:59:19,790  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 01:59:19,790  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 01:59:19,894  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 01:59:20,591  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-06-15 01:59:20,732  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8081 (http)
+2017-06-15 01:59:20,742  INFO TestForApplication:57 - Started TestForApplication in 13.445 seconds (JVM running for 14.791)
+2017-06-15 02:00:03,272  INFO TestForApplication:14 - test log4j is working or not
+2017-06-15 02:00:04,419  INFO TestForApplication:48 - Starting TestForApplication on tianxianglan-PC with PID 4016 (D:\destiny\Boot\target\classes started by tianxianglan in D:\destiny\Boot)
+2017-06-15 02:00:04,420  INFO TestForApplication:637 - No active profile set, falling back to default profiles: default
+2017-06-15 02:00:04,589  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42607a4f: startup date [Thu Jun 15 02:00:04 CST 2017]; root of context hierarchy
+2017-06-15 02:00:05,150  INFO Version:30 - HV000001: Hibernate Validator 5.3.5.Final
+2017-06-15 02:00:08,749  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8081 (http)
+2017-06-15 02:00:09,132  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 4550 ms
+2017-06-15 02:00:09,484  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-15 02:00:09,493  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-15 02:00:09,494  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-15 02:00:09,494  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-15 02:00:09,495  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-15 02:00:09,753  INFO LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-06-15 02:00:09,797  INFO LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-06-15 02:00:09,931  INFO Version:54 - HHH000412: Hibernate Core {4.3.8.Final}
+2017-06-15 02:00:09,934  INFO Environment:239 - HHH000206: hibernate.properties not found
+2017-06-15 02:00:09,939  INFO Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-06-15 02:00:12,465  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-06-15 02:00:12,893  INFO Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-06-15 02:00:13,114  INFO ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-06-15 02:00:13,121  WARN SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-06-15 02:00:13,808  INFO LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-06-15 02:00:14,812  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42607a4f: startup date [Thu Jun 15 02:00:04 CST 2017]; root of context hierarchy
+2017-06-15 02:00:14,969  INFO RequestMappingHandlerMapping:543 - Mapped "{[/test],methods=[POST]}" onto public void com.example.demo.controller.UserController.test(java.lang.String)
+2017-06-15 02:00:14,971  INFO RequestMappingHandlerMapping:543 - Mapped "{[/testNULL],methods=[POST]}" onto public void com.example.demo.controller.UserController.yy()
+2017-06-15 02:00:14,999  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-15 02:00:15,004  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-15 02:00:15,091  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 02:00:15,092  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 02:00:15,195  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 02:00:15,806  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-06-15 02:00:15,930  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8081 (http)
+2017-06-15 02:00:15,939  INFO TestForApplication:57 - Started TestForApplication in 12.285 seconds (JVM running for 13.267)

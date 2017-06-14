@@ -2,8 +2,10 @@ package com.example.demo.controller;
 
 import com.example.demo.annotation.PermissionEnum;
 import com.example.demo.annotation.SelfPermitition;
-import com.example.demo.service.UserService;
 import com.example.demo.entity.User;
+import com.example.demo.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,6 +18,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
+
     @PostMapping(value = "/test")
     @SelfPermitition(value = {PermissionEnum.ADMIN, PermissionEnum.COMMON_USER})
     public void test(String token){
@@ -25,7 +28,6 @@ public class UserController {
     }
 
     @PostMapping(value = "/testNULL")
-
     public void yy(){
         System.out.println("test annotation is null");
     }

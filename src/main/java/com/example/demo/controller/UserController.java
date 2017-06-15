@@ -3,7 +3,6 @@ package com.example.demo.controller;
 import com.example.demo.annotation.PermissionEnum;
 import com.example.demo.annotation.SelfPermission;
 import com.example.demo.entity.User;
-import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +19,7 @@ public class UserController {
     @PostMapping(value = "/test")
     @SelfPermission(value = {PermissionEnum.ADMIN, PermissionEnum.COMMON_USER})
     public void test(String token) {
-        User findUser = userService.search("leo");
+        User findUser = userService.findByName("leo");
         String groupName = findUser.getGroup().getName();
         System.out.println(groupName);
     }

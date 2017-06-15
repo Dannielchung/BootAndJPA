@@ -1,7 +1,6 @@
 package com.example.demo.serviceTest;
 
 import com.example.demo.entity.User;
-import com.example.demo.service.UserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

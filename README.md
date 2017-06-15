@@ -6,21 +6,21 @@
 ``` java
 <!--去除boot自带的loging日志，改用log4j日志-->
 <dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-starter</artifactId>
-<exclusions>
-	<exclusion>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-logging</artifactId>
-	</exclusion>
-</exclusions>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter</artifactId>
+	<exclusions>
+		<exclusion>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</exclusion>
+	</exclusions>
 </dependency>
 
 <!--导入log4j日志，log4j2依赖则无效-->
 <dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-starter-log4j</artifactId>
-<version>1.3.6.RELEASE</version>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-log4j</artifactId>
+	<version>1.3.6.RELEASE</version>
 </dependency>
 ```
 * 注意，有些网站引入log4j2依赖依然有用，但自己试后发现并非如此

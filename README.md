@@ -35,3 +35,5 @@ SelfPermission selfPermitition = handlerMethod.getMethodAnnotation(SelfPermissio
 ```
 ### 拦截器的实现
 * 在config包中的InteceptorConfig类中定义了拦截规则并注册了拦截器，拦截器的具体实现是在interceptor包下的URLInteceptor类中。
+### 全局异常的捕获
+* 

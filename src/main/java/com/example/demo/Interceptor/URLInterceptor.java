@@ -1,5 +1,9 @@
 package com.example.demo.Interceptor;
 
+import com.example.demo.annotation.PermissionEnum;
+import com.example.demo.annotation.SelfPermission;
+import org.springframework.core.MethodParameter;
+import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -14,7 +18,6 @@ public class URLInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-        /*System.out.println("preHandle");
         HandlerMethod handlerMethod = (HandlerMethod)o;
         SelfPermission selfPermitition = handlerMethod.getMethodAnnotation(SelfPermission.class);
 
@@ -31,7 +34,7 @@ public class URLInterceptor implements HandlerInterceptor {
             }
         }
         else
-            System.out.println("selePermission is null");*/
+            System.out.println("selePermission is null");
         return true;
     }
 

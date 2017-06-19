@@ -36,4 +36,7 @@ SelfPermission selfPermitition = handlerMethod.getMethodAnnotation(SelfPermissio
 ### 拦截器的实现
 * 在config包中的InteceptorConfig类中定义了拦截规则并注册了拦截器，拦截器的具体实现是在interceptor包下的URLInteceptor类中。
 ### 全局异常的捕获
-* 
+* 有些导致业务代码出现问题的情况我们是不需要将确切的错误信息返回给用户的，而是只需要将其记入日志，之后我们对系统进行改进或者修改bug时可参照日志进行完善。
+* 在exception包下自定义了各种异常（继承RuntimeException）
+* 之后在service层对异常进行抛出，并在ExceptionController类中根据@ExceptionHandler注解对异常进行精确捕获。
+* 进入异常对应的处理逻辑后，将异常对应的信息记入日志

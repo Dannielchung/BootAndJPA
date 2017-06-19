@@ -4,10 +4,10 @@
 ### 日志的引入
 * 在弃用boot自带的logging日志框架后，自己引入了log4j日志，pom文件为
 ``` java
-<!--去除boot自带的loging日志，改用log4j日志-->
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter</artifactId>
+	<!--去除boot默认使用的loging日志，改用log4j日志-->
 	<exclusions>
 		<exclusion>
 			<groupId>org.springframework.boot</groupId>
@@ -23,11 +23,11 @@
 	<version>1.3.6.RELEASE</version>
 </dependency>
 ```
-* 注意，有些网站引入log4j2依赖依然有用，但自己试后发现并非如此
+* 注意，有些网站代码引入的依赖为log4j2，最后发现并没用
 
 ### 基于注解的权限管理
 * 在annotation包中添加了一个`PermissionEnum`枚举类型，里面饱含了可能出现的各种角色，并定义了一个`SelfPermitition`注解
-* 在拦截器中获取到controller层注解中的值，之后再与用户所对应权限比对是否符合
+* 在拦截器中获取到controller层方法前SelfPermission注解中的值，之后再与用户所对应权限比对是否符合
 ``` java
 <!--o为传入的object对象-->
 HandlerMethod handlerMethod = (HandlerMethod)o;

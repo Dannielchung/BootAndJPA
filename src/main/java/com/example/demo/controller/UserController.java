@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
     @Autowired
-    UserDaoImpl userDao;
+    UserDaoImpl userDaoImpl;
 
 
     @PostMapping(value = "/test")
     @SelfPermission(value = {PermissionEnum.ADMIN, PermissionEnum.COMMON_USER})
-    public Response test(String token) {
-        User findUser = userDao.findByName("leo");
-        return userDao.updateInfo(findUser);
+    public Response test() {
+        User findUser = userDaoImpl.findByName("leo");
+        return userDaoImpl.updateInfo(findUser);
     }
 
 }

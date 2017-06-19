@@ -2,7 +2,7 @@
 * 个人认为这是这个demo中一个败笔，因为引入了外键依赖，需额外引入一个配置类JpaConfiguration，其中配置有数据源（datasoure）、适配器（jpaVendorAdapter）以及实体管理工厂（entityManagerFactory），配置显得较为繁琐
 * 后面在JPA的使用中，一开始将获取策略设置为懒加载模式，后面写逻辑过程有遇到了很大问题，不得已设置成饥饿加载模式。总之，`慎用外键依赖`
 ### 日志的引入
-* 在弃用boot自带的logging日志框架后，自己引入了log4j日志，pom文件为
+* 在弃用boot自带的logging日志框架后，自己引入了log4j日志，并对日志信息进行了一些配置，详见log4j.properties，pom文件为
 ``` java
 <dependency>
 	<groupId>org.springframework.boot</groupId>

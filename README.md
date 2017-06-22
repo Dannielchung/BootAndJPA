@@ -40,3 +40,4 @@ SelfPermission selfPermitition = handlerMethod.getMethodAnnotation(SelfPermissio
 * 在exception包下自定义了各种异常（继承RuntimeException）
 * 之后在service层对异常进行抛出，并在ExceptionController类中根据@ExceptionHandler注解对异常进行精确捕获。
 * 进入异常对应的处理逻辑后，将异常对应的信息记入日志
+### 下一步计划配置多数据源

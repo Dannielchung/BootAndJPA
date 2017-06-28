@@ -8,10 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class TestForApplication {
 
-	private static Logger LOGGER = LoggerFactory.getLogger(TestForApplication.class);
-
 	public static void main(String[] args) {
-		LOGGER.info("test log4j is working or not");
 		SpringApplication.run(TestForApplication.class, args);
 	}
 }

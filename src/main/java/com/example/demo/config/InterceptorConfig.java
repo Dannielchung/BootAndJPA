@@ -13,8 +13,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 @Configuration
 public class InterceptorConfig extends WebMvcConfigurerAdapter{
+
+    @Bean
+    URLInterceptor urlInterceptor(){
+        return new URLInterceptor();
+    }
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new URLInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(urlInterceptor()).addPathPatterns("/**");
     }
 }

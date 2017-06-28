@@ -6,10 +6,12 @@ import com.example.demo.entity.User;
 import com.example.demo.exception.InvalidException;
 import com.example.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by tianxianglan on 2017/6/16.
  */
+@Service
 public class UserDaoImpl {
     @Autowired
     UserRepository userRepository;

@@ -1,3 +1,4 @@
+/*
 package com.example.demo.config;
 
 import org.springframework.context.annotation.Bean;
@@ -13,9 +14,9 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.Properties;
 
-/**
- * Created by cvter on 2017/5/31.
- */
+
+import org.springframework.stereotype.Component;
+
 @Component
 @Configuration
 public class JpaConfiguration {
@@ -60,3 +61,4 @@ public class JpaConfiguration {
         return lef;
     }
 }
+*/

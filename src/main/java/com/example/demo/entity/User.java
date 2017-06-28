@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class User {
     private int id;
     private String name;
-    private Group group;
+    private int groupId;
 
     @Id
     public int getId() {
@@ -30,13 +30,12 @@ public class User {
         this.name = name;
     }
 
-    @ManyToOne()
-    @JoinColumn(name = "g_id", referencedColumnName = "id")
-    public Group getGroup() {
-        return group;
+    @Column(name = "g_id")
+    public int getGroupId() {
+        return groupId;
     }
 
-    public void setGroup(Group group) {
-        this.group = group;
+    public void setGroupId(int groupId) {
+        this.groupId = groupId;
     }
 }

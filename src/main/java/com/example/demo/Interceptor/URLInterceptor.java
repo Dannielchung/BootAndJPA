@@ -27,15 +27,16 @@ public class URLInterceptor implements HandlerInterceptor {
                 System.out.println(para.getMember());
             }
             String str = httpServletRequest.getParameter("token");
-            System.out.println("str  "+ str);
             PermissionEnum[] permissionEnums = selfPermitition.value();
-            for (PermissionEnum oo : permissionEnums){
-                System.out.println(oo.name());
+            for (PermissionEnum permission : permissionEnums){
+                /*
+                * 获取用户的权限值，与permission进行比对，只要有一个符合即可返回true
+                * */
+                return true;
             }
         }
-        else
-            System.out.println("selePermission is null");
         return true;
+
     }
 
     @Override

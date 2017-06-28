@@ -1,6 +1,7 @@
-### 引入Hibernate的外键依赖
-* 个人认为这是这个demo中一个败笔，因为引入了外键依赖，需额外引入一个配置类JpaConfiguration，其中配置有数据源（datasoure）、适配器（jpaVendorAdapter）以及实体管理工厂（entityManagerFactory），配置显得较为繁琐
-* 后面在JPA的使用中，一开始将获取策略设置为懒加载模式，后面写逻辑过程有遇到了很大问题，不得已设置成饥饿加载模式。总之，`慎用外键依赖`
+### 引入Hibernate的关联映射
+* 前期代码中，实体间采用了@ManyToOne关联映射，但后期发现，在实体较多时，懒加载策略会出现问题，所以不得已采用饿汉模式进行实体间的加载，这就会使得查询出来的实体过于庞大，且较多数据都不是我们所需要的。
+* 因此，现在版本的代码中，这个问题得以纠正，但关联映射所需要的实体管理工厂（entityManagerFactory）仍保留在配置类JpaConfiguration中
+* 总之，`慎用关联映射`
 ### 日志的引入
 * 在弃用boot自带的logging日志框架后，自己引入了log4j日志，并对日志信息进行了一些配置，详见log4j.properties，pom文件为
 ``` java

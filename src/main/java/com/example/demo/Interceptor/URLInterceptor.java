@@ -20,13 +20,8 @@ public class URLInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         HandlerMethod handlerMethod = (HandlerMethod)o;
         SelfPermission selfPermitition = handlerMethod.getMethodAnnotation(SelfPermission.class);
-
+        String token = httpServletRequest.getParameter("token");
         if (selfPermitition != null) {
-            MethodParameter[] parameters = handlerMethod.getMethodParameters();
-            for (MethodParameter para : parameters){
-                System.out.println(para.getMember());
-            }
-            String str = httpServletRequest.getParameter("token");
             PermissionEnum[] permissionEnums = selfPermitition.value();
             for (PermissionEnum permission : permissionEnums){
                 /*
@@ -36,7 +31,6 @@ public class URLInterceptor implements HandlerInterceptor {
             }
         }
         return true;
-
     }
 
     @Override

@@ -4,9 +4,9 @@ package com.example.demo.common;
  * Created by tianxianglan on 2017/6/17.
  */
 public class Response {
-    private short status;
-    private String errmsg;
-    private Object object;
+    public short status;
+    public String errmsg;
+    public Object object;
 
     public Response() {
     }
